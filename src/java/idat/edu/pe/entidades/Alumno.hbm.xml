@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/11/2018 04:48:01 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="idat.edu.pe.entidades.Alumno" table="Alumno" schema="dbo" catalog="bdnotas" optimistic-lock="version">
+        <id name="idAlumno" type="string">
+            <column name="IdAlumno" length="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="apeAlumno" type="string">
+            <column name="ApeAlumno" length="30" not-null="true" />
+        </property>
+        <property name="nomAlumno" type="string">
+            <column name="NomAlumno" length="30" not-null="true" />
+        </property>
+        <property name="idesp" type="string">
+            <column name="Idesp" length="3" not-null="true" />
+        </property>
+        <property name="proce" type="string">
+            <column name="PROCE" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>
